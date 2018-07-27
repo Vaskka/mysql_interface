@@ -27,7 +27,7 @@ string Executer_Filter::toString() {
     map<string,string>::iterator iter;
     for(iter = indexs.begin(); iter != indexs.end(); iter++)
     {
-        result += (iter->first + "=" + iter->second);
+        result += (iter->first + "=" + "'" + iter->second + "'");
         result += (" " + this->STATUS + " ");
     }
 
