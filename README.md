@@ -77,7 +77,7 @@ string "key_1=1 AND key_2=2333 AND key_3=qwer"
     DeleteExecuter del = DeleteExecuter("要删除的表名");
     // 构造删除过滤器
     del.filter.addFilter("id", "2");
-    del.doInsert()
+    del.doDelete()
 
 </code>
 </pre>
